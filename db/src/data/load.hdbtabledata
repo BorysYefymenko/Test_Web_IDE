@@ -1,0 +1,29 @@
+{
+	"format_version": 1,
+	"imports": [{
+		"target_table": "PO.APPROVAL_STATUS",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "status.csv",
+			"has_header": true
+		},
+		"import_settings": {
+			"import_columns": [
+				"ID",
+				"TEXT"
+			]
+		}
+	}, {
+		"target_table": "PO.INVOICE_ITEM",
+		"source_data": {
+			"data_type": "CSV",
+			"file_name": "invoice_items.csv",
+			"has_header": true
+		},
+		"import_settings": {
+			"import_columns": [
+				"ID", "PRODUCT_ID", "DELIVERY_DATE", "APPROVAL_STATUS_ID", "AMOUNT", "QUANTITY"
+			]
+		}
+	}]
+}

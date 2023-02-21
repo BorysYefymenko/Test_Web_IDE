@@ -1,0 +1,26 @@
+context PO {
+@Comment: 'Approval Status Entity'
+    Entity APPROVAL_STATUS {
+    	@Comment: 'Approval Status ID'
+        key  ID:  String(3);
+    	@Comment: 'Approval Status Text'
+    	TEXT: String(50);
+    };
+
+@Comment: 'Invoice Items Entity'
+    Entity INVOICE_ITEM {
+	    @Comment: 'Invoice Item ID'
+	    key  ID: Integer;
+	    @Comment: 'Invoice Item Product ID'
+	    PRODUCT_ID: Integer;
+	    @Comment: 'Invoice Item Delivery Date'
+		DELIVERY_DATE: LocalDate;
+	    @Comment: 'Invoice Item Approcal Status ID'
+	    APPROVAL_STATUS_ID: String(3);
+	    @Comment: 'Invoice Item Amount'
+	    AMOUNT: Decimal(18, 2);
+	    @Comment: 'Invoice Item Quantity'
+		QUANTITY: Decimal(13, 3);
+    };    
+};
+
