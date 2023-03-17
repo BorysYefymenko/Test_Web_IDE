@@ -1,0 +1,13 @@
+{
+  "role": {
+    "name": "admin_role",
+    "schema_privileges": [
+      {
+        "privileges": [
+          "SELECT METADATA",
+          "SELECT"
+        ]
+      }
+    ]
+  }
+}

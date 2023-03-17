@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_TEST_VALIDATION_RULES" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_TEST"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="WBS">
+    <resourceUri>WBS</resourceUri>
+  </DataSource>
+  <DataSource id="WBS_1">
+    <resourceUri>WBS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:JoinView" id="Join_1" joinType="leftOuter">
+    <viewAttributes>
+      <viewAttribute id="WBS"/>
+      <viewAttribute id="WBS_TEXT"/>
+      <viewAttribute id="WBS_LEVEL" aggregationType="sum"/>
+      <viewAttribute id="WBS_LEVEL1"/>
+      <viewAttribute id="WBS_LEVEL2"/>
+      <viewAttribute id="WBS_LEVEL3"/>
+      <viewAttribute id="WBS_LEVEL4"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="WBS">
+      <mapping xsi:type="Calculation:ConstantAttributeMapping" target="WBS" null="true"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WBS_TEXT" source="WBS_TEXT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WBS_LEVEL" source="WBS_LEVEL"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WBS_LEVEL1" source="WBS_LEVEL1"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WBS_LEVEL2" source="WBS_LEVEL2"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WBS_LEVEL3" source="WBS_LEVEL3"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="WBS_LEVEL4" source="WBS_LEVEL4"/>
+    </input>
+    <input node="WBS_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="WBS_LEVEL1" source="WBS"/>
+    </input>
+    <joinAttribute name="WBS_LEVEL1"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Join_1">
+  <attributes>
+    <attribute id="WBS" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS"/>
+      <keyMapping columnObjectName="Join_1" columnName="WBS"/>
+    </attribute>
+    <attribute id="WBS_TEXT" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_TEXT"/>
+      <keyMapping columnObjectName="Join_1" columnName="WBS_TEXT"/>
+    </attribute>
+    <attribute id="WBS_LEVEL1" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL1"/>
+      <keyMapping columnObjectName="Join_1" columnName="WBS_LEVEL1"/>
+    </attribute>
+    <attribute id="WBS_LEVEL2" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL2"/>
+      <keyMapping columnObjectName="Join_1" columnName="WBS_LEVEL2"/>
+    </attribute>
+    <attribute id="WBS_LEVEL3" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL3"/>
+      <keyMapping columnObjectName="Join_1" columnName="WBS_LEVEL3"/>
+    </attribute>
+    <attribute id="WBS_LEVEL4" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL4"/>
+      <keyMapping columnObjectName="Join_1" columnName="WBS_LEVEL4"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="WBS_LEVEL" order="3" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="WBS_LEVEL"/>
+      <measureMapping columnObjectName="Join_1" columnName="WBS_LEVEL"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="221.11302679000914" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Join_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="221.11302679000914" y="217"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="WBS" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="620" y="30"/>
+      <rectangleSize width="247.3583984375"/>
+    </shape>
+    <shape modelObjectName="WBS" modelObjectNameSpace="Join_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="1220" y="30"/>
+      <rectangleSize width="247.3583984375"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

@@ -1,0 +1,12 @@
+FUNCTION "TF_PLUS1"(in in_table table (ID INTEGER,  TEXT NVARCHAR(50))) 
+       RETURNS table (ID INTEGER, 
+       TEXT NVARCHAR(50),
+       ID2 INTEGER)
+       LANGUAGE SQLSCRIPT 
+       SQL SECURITY INVOKER AS 
+BEGIN 
+
+
+    RETURN 
+    select *, ID+1 as ID2 from :in_table;
+END;

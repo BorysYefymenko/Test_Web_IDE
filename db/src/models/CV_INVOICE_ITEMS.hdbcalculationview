@@ -9,17 +9,23 @@
   </DataSource>
 </dataSources>
 <calculationViews>
-  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1" filterExpressionLanguage="SQL">
     <viewAttributes>
-      <viewAttribute id="ID"/>
+      <viewAttribute id="ID"/> 
       <viewAttribute id="PRODUCT_ID"/>
       <viewAttribute id="DELIVERY_DATE"/>
       <viewAttribute id="AMOUNT"/>
       <viewAttribute id="QUANTITY"/>
       <viewAttribute id="APPROVAL_STATUS_ID"/>
     </viewAttributes>
-    <calculatedViewAttributes/>
+    <calculatedViewAttributes>
+      <calculatedViewAttribute id="CALC_MEASURE" datatype="DECIMAL" length="18" scale="2" expressionLanguage="COLUMN_ENGINE">
+        <formula>&quot;AMOUNT&quot;/&quot;QUANTITY&quot;</formula>
+      </calculatedViewAttribute>
+    </calculatedViewAttributes>
     <input node="PO.INVOICE_ITEM"/>
+  
+    <filter>&quot;CALC_MEASURE&quot;&gt;100</filter>
   </calculationView>
 </calculationViews>
 <logicalModel id="Projection_1">
@@ -62,7 +68,7 @@
       <associatedAttributeNames>
         <attributeName>APPROVAL_STATUS_ID</attributeName>
       </associatedAttributeNames>
-      <properties cardinality="CN_1" joinType="leftOuter" joinOperator="Equal"/>
+      <properties cardinality="CN_1" joinType="leftOuter" optimizeJoinColumns="true" joinOperator="Equal"/>
       <associatedAttributeFeatures/>
     </logicalJoin>
   </sharedDimensions>

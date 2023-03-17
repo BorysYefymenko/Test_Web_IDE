@@ -1,0 +1,42 @@
+context TEST_TABLES {
+    Entity T1 {
+        key  ID:  String(3);
+    	TEXT: String(50);
+    };
+
+    Entity T2 {
+        key  ID:  String(3);
+    	TEXT: String(50);
+    };
+    Entity ACCOUNT_HIER {
+        key  ID:  Integer;
+    	TEXT: String(50);
+    	PARENT_ID:  Integer;
+    };
+    Entity DATA {
+        key  ID:  Integer;
+    	ACCOUNT_ID:  Integer;
+    	AMOUNT: Decimal(15,2);
+    };
+    Entity PERSON{
+    	key  ID:  Integer;
+    	firstname: String(100);	
+    	lastname: String(100);
+    	account_no: String(100);
+    	salary: Decimal(15,2);
+    	start_year: String(100);
+    	gender: String(100);
+    	region: String(100);
+    	zipcode: String(10);
+    	TLevel: String(5);
+    	education: String(50);
+    };
+    Entity PERSON_DATA{
+    	key  ID:  Integer;
+    	name: String(100);	
+    	gender: String(1);
+    	TLevel: String(5);
+		salary: Decimal(15,2);
+    }
+
+};

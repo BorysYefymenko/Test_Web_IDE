@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_ANONYMIZATION" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_ANONYMIZATION"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="TEST_TABLES.PERSON_DATA">
+    <resourceUri>TEST_TABLES.PERSON_DATA</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:AnonymizeView" id="Anonymize_1" method="kAnonymity">
+    <viewAttributes>
+      <viewAttribute id="ID"/>
+      <viewAttribute id="gender"/>
+      <viewAttribute id="TLevel"/>
+      <viewAttribute id="salary"/>
+      <viewAttribute id="name"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="TEST_TABLES.PERSON_DATA">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="ID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="gender" source="gender"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TLevel" source="TLevel"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="salary" source="salary"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="name" source="name"/>
+    </input>
+    <anonymizeParameterization>
+      <seqColumn>ID</seqColumn>
+      <k>3</k>
+      <qidColumn id="TLevel"/>
+      <qidColumn id="gender"/>
+      <qidColumnHierarchy id="TLevel">
+        <hierarchyEmbeded>T3;T3-T5;*T1;T1-T2;*T5;T3-T5;*T4;T3-T5;*</hierarchyEmbeded>
+      </qidColumnHierarchy>
+      <qidColumnHierarchy id="gender">
+        <hierarchyEmbeded>m;m;*f;f;*</hierarchyEmbeded>
+      </qidColumnHierarchy>
+    </anonymizeParameterization>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Anonymize_1">
+  <attributes>
+    <attribute id="ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ID"/>
+      <keyMapping columnObjectName="Anonymize_1" columnName="ID"/>
+    </attribute>
+    <attribute id="gender" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="gender"/>
+      <keyMapping columnObjectName="Anonymize_1" columnName="gender"/>
+    </attribute>
+    <attribute id="TLevel" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="TLevel"/>
+      <keyMapping columnObjectName="Anonymize_1" columnName="TLevel"/>
+    </attribute>
+    <attribute id="salary" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="salary"/>
+      <keyMapping columnObjectName="Anonymize_1" columnName="salary"/>
+    </attribute>
+    <attribute id="name" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="name"/>
+      <keyMapping columnObjectName="Anonymize_1" columnName="name"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="92" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Anonymize_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="217"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

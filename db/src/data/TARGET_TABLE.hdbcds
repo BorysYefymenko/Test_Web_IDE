@@ -1,0 +1,19 @@
+context TARGET_TABLE {
+@Comment: 'Invoice Items Entity'
+    Entity TARGET {
+	    @Comment: 'Invoice Item ID'
+	    key  ID: Integer;
+	    @Comment: 'Invoice Item Product ID'
+	    PRODUCT_ID: Integer;
+	    @Comment: 'Invoice Item Delivery Date'
+		DELIVERY_DATE: LocalDate;
+	    @Comment: 'Invoice Item Approcal Status ID'
+	    APPROVAL_STATUS_ID: String(3);
+	    @Comment: 'Invoice Item Approcal Status Text'
+	    APPROVAL_STATUS_TEXT: String(50);
+	    @Comment: 'Invoice Item Amount'
+	    AMOUNT: Decimal(18, 2);
+	    @Comment: 'Invoice Item Quantity'
+		QUANTITY: Decimal(13, 3);
+    };  
+};

@@ -1,0 +1,1066 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="DIM_WBS" applyPrivilegeType="NONE" dataCategory="DIMENSION" dimensionType="STANDARD" schemaVersion="3.0" outputViewType="Projection" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="DIM_WBS"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="WBS">
+    <resourceUri>WBS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="WBS"/>
+      <viewAttribute id="WBS_TEXT"/>
+      <viewAttribute id="WBS_LEVEL"/>
+      <viewAttribute id="WBS_LEVEL1"/>
+      <viewAttribute id="WBS_LEVEL2"/>
+      <viewAttribute id="WBS_LEVEL3"/>
+      <viewAttribute id="WBS_LEVEL4"/>
+      <viewAttribute id="WBS_LEGACY"/>
+      <viewAttribute id="WBS_A_I_O"/>
+      <viewAttribute id="WBS_A_I_O_TEXT"/>
+      <viewAttribute id="WBS_MASTER_ENGMT"/>
+      <viewAttribute id="WBS_MASTER_ENGMT_TEXT"/>
+      <viewAttribute id="WBS_CONTRACT_TYPE"/>
+      <viewAttribute id="WBS_CONTRACT_TYPE_TEXT"/>
+      <viewAttribute id="WBS_BILL_TO_CLIENT"/>
+      <viewAttribute id="WBS_END_CLIENT"/>
+      <viewAttribute id="DPS_CLIENT"/>
+      <viewAttribute id="DPS_CLIENT_TEXT"/>
+      <viewAttribute id="PARENT_CLIENT"/>
+      <viewAttribute id="PARENT_CLIENT_TEXT"/>
+      <viewAttribute id="WBS_BUDGET_GROUP"/>
+      <viewAttribute id="WBS_BUS_IMPERATIVE_CODE"/>
+      <viewAttribute id="WBS_BUS_IMPERATIVE_CODE_TEXT"/>
+      <viewAttribute id="WBS_BIC_IP_FLG"/>
+      <viewAttribute id="WBS_CITY"/>
+      <viewAttribute id="WBS_CLIENT_NONCLIENT_IND"/>
+      <viewAttribute id="WBS_CLIENT_NONCLIENT_IND_TEXT"/>
+      <viewAttribute id="WBS_CREATED_ON"/>
+      <viewAttribute id="WBS_CREATED_BY"/>
+      <viewAttribute id="WBS_CHANGED_ON"/>
+      <viewAttribute id="WBS_CLOSED_DATE"/>
+      <viewAttribute id="WBS_ESTIMATED_START_DATE"/>
+      <viewAttribute id="WBS_ESTIMATED_END_DATE"/>
+      <viewAttribute id="MEMBER_FIRM"/>
+      <viewAttribute id="WBS_COMPANY_CODE"/>
+      <viewAttribute id="WBS_COMPANY_CODE_TEXT"/>
+      <viewAttribute id="WBS_CONTINGENCY_FEE_FLAG"/>
+      <viewAttribute id="WBS_LEVEL2_CONTINGENCY_FEE_FLAG"/>
+      <viewAttribute id="WBS_CONTROLLING_AREA"/>
+      <viewAttribute id="WBS_PROFIT_CENTER"/>
+      <viewAttribute id="WBS_PROFIT_CENTER_SHORT_TEXT"/>
+      <viewAttribute id="WBS_PROFIT_CENTER_MED_TEXT"/>
+      <viewAttribute id="WBS_COST_CENTER"/>
+      <viewAttribute id="WBS_COST_CENTER_SHORT_TEXT"/>
+      <viewAttribute id="WBS_COST_CENTER_MED_TEXT"/>
+      <viewAttribute id="WBS_CURRENT_DISCOUNT"/>
+      <viewAttribute id="WBS_DTT_PARTICIPATION"/>
+      <viewAttribute id="WBS_GLOBAL_ENGMT_IND"/>
+      <viewAttribute id="WBS_GLOBAL_SIC"/>
+      <viewAttribute id="WBS_GLOBAL_SIC_TEXT"/>
+      <viewAttribute id="WBS_GLOBAL_INDUSTRY"/>
+      <viewAttribute id="WBS_GLOBAL_INDUSTRY_TEXT"/>
+      <viewAttribute id="WBS_GLOBAL_SECTOR"/>
+      <viewAttribute id="WBS_GLOBAL_SECTOR_TEXT"/>
+      <viewAttribute id="WBS_GLOBAL_SUB_SECTOR"/>
+      <viewAttribute id="WBS_GLOBAL_SUB_SECTOR_TEXT"/>
+      <viewAttribute id="WBS_IMO"/>
+      <viewAttribute id="WBS_IMO_TEXT"/>
+      <viewAttribute id="WBS_INTERNAL_NUM"/>
+      <viewAttribute id="WBS_INV_HEADER"/>
+      <viewAttribute id="WBS_INV_HEADER_TEXT"/>
+      <viewAttribute id="WBS_INV_TYPE"/>
+      <viewAttribute id="WBS_INV_TYPE_TEXT"/>
+      <viewAttribute id="WBS_INV_TO_DTT"/>
+      <viewAttribute id="WBS_INV_MEDIUM"/>
+      <viewAttribute id="WBS_TRANSM_METHOD"/>
+      <viewAttribute id="WBS_OBJECT_NBR"/>
+      <viewAttribute id="WBS_OPPORTUNITY_NBR"/>
+      <viewAttribute id="WBS_PRI_BILLTO_CONTACT"/>
+      <viewAttribute id="WBS_PRI_BILLTO_CONTACT_TEXT"/>
+      <viewAttribute id="WBS_ENGMT_DEF"/>
+      <viewAttribute id="WBS_ENGMT_DEF_TEXT"/>
+      <viewAttribute id="WBS_ENGMT_TYPE_GROUP"/>
+      <viewAttribute id="WBS_ENGMT_TYPE_GROUP_TEXT"/>
+      <viewAttribute id="WBS_ENGMT_TYPE"/>
+      <viewAttribute id="WBS_ENGMT_TYPE_TEXT"/>
+      <viewAttribute id="WBS_ENGMT_SUBTYPE"/>
+      <viewAttribute id="WBS_ENGMT_SUBTYPE_TEXT"/>
+      <viewAttribute id="WBS_ENGMT_CLIENT_PRD_TYPE"/>
+      <viewAttribute id="WBS_EVENT_FEE_INDICATOR"/>
+      <viewAttribute id="WBS_PAYMENT_TERMS"/>
+      <viewAttribute id="WBS_PAYMENT_TERMS_TEXT"/>
+      <viewAttribute id="WBS_RATE_TYPE"/>
+      <viewAttribute id="WBS_RATE_TYPE_TEXT"/>
+      <viewAttribute id="WBS_INDIA_RATE_TYPE"/>
+      <viewAttribute id="WBS_INDIA_RATE_TYPE_TEXT"/>
+      <viewAttribute id="WBS_RECURRING_FLAG"/>
+      <viewAttribute id="WBS_SECTOR_MO_CODE"/>
+      <viewAttribute id="WBS_SECTOR_MO_TEXT"/>
+      <viewAttribute id="WBS_SERVICES_AT_CLIENT"/>
+      <viewAttribute id="WBS_SIC"/>
+      <viewAttribute id="WBS_SIC_TEXT"/>
+      <viewAttribute id="WBS_INDUSTRY"/>
+      <viewAttribute id="WBS_INDUSTRY_TEXT"/>
+      <viewAttribute id="WBS_SECTOR"/>
+      <viewAttribute id="WBS_SECTOR_TEXT"/>
+      <viewAttribute id="WBS_SUB_SECTOR"/>
+      <viewAttribute id="WBS_SUB_SECTOR_TEXT"/>
+      <viewAttribute id="WBS_WORK_OUTSIDE_US"/>
+      <viewAttribute id="WBS_STATUS_ID"/>
+      <viewAttribute id="WBS_STATUS_SHORT_TEXT"/>
+      <viewAttribute id="WBS_STATUS_MED_TEXT"/>
+      <viewAttribute id="WBS_STATE"/>
+      <viewAttribute id="WBS_SYS_STATUS"/>
+      <viewAttribute id="WBS_SYS_STATUS_TEXT"/>
+      <viewAttribute id="WBS_USER_STATUS"/>
+      <viewAttribute id="WBS_USER_STATUS_TEXT"/>
+      <viewAttribute id="WBS_PREFIX"/>
+      <viewAttribute id="WBS_VBB_TYPE"/>
+      <viewAttribute id="WBS_TAX_PRESENCE_IND"/>
+      <viewAttribute id="WBS_NONBILL_IND"/>
+      <viewAttribute id="MO"/>
+      <viewAttribute id="MO_TEXT"/>
+      <viewAttribute id="MO_GROUP"/>
+      <viewAttribute id="MO_GROUP_TEXT"/>
+      <viewAttribute id="MO_SUB_SOLUTION"/>
+      <viewAttribute id="MO_SUB_SOLUTION_TEXT"/>
+      <viewAttribute id="MO_SOLUTION"/>
+      <viewAttribute id="MO_SOLUTION_TEXT"/>
+      <viewAttribute id="MO_SUB_CATEGORY"/>
+      <viewAttribute id="MO_SUB_CATEGORY_TEXT"/>
+      <viewAttribute id="MO_CATEGORY"/>
+      <viewAttribute id="MO_CATEGORY_TEXT"/>
+      <viewAttribute id="ADV_MO_FULL_PATH_OVRD"/>
+      <viewAttribute id="PROD_HIER_OVRD"/>
+      <viewAttribute id="ADV_MO_TEXT"/>
+      <viewAttribute id="ADV_MO_SOLUTION"/>
+      <viewAttribute id="ENGMT_PRTNR"/>
+      <viewAttribute id="ENGMT_PRTNR_TEXT"/>
+      <viewAttribute id="ENGMT_MGR"/>
+      <viewAttribute id="ENGMT_MGR_TEXT"/>
+      <viewAttribute id="ENGMT_CTRL"/>
+      <viewAttribute id="ENGMT_CTRL_TEXT"/>
+      <viewAttribute id="BILL_PRTNR"/>
+      <viewAttribute id="BILL_PRTNR_TEXT"/>
+      <viewAttribute id="BILL_MGR"/>
+      <viewAttribute id="BILL_MGR_TEXT"/>
+      <viewAttribute id="PRTCP_ENGMT_PRTNR"/>
+      <viewAttribute id="PRTCP_ENGMT_PRTNR_TEXT"/>
+      <viewAttribute id="PRTCP_ENGMT_MGR"/>
+      <viewAttribute id="PRTCP_ENGMT_MGR_TEXT"/>
+      <viewAttribute id="SR_STAFF"/>
+      <viewAttribute id="SR_STAFF_TEXT"/>
+      <viewAttribute id="FIN_ANALYST"/>
+      <viewAttribute id="FIN_ANALYST_TEXT"/>
+      <viewAttribute id="CONTRACT_NUMBER"/>
+      <viewAttribute id="CONTRACT_LINE_ITEM"/>
+      <viewAttribute id="CONTRACT_PROD_HIERARCHY"/>
+      <viewAttribute id="CONTRACT_MATERIAL"/>
+      <viewAttribute id="MATERIAL_PROD_HIERARCHY"/>
+      <viewAttribute id="PROD_HIER"/>
+      <viewAttribute id="ENGMT_SERVICE_UPLIFT"/>
+      <viewAttribute id="WBS_SALES_OFFICE"/>
+      <viewAttribute id="WBS_INV_LAYOUT"/>
+      <viewAttribute id="WBS_PAYER"/>
+      <viewAttribute id="WBS_SHIP_TO_LOCATION"/>
+      <viewAttribute id="WBS_CLIENT_REF_PO_NUMBER"/>
+      <viewAttribute id="WBS_DIRECT_ASSET"/>
+      <viewAttribute id="WBS_DIRECT_ASSET_TEXT"/>
+      <viewAttribute id="WBS_DIRECT_ASSET_REV_CAT"/>
+      <viewAttribute id="WBS_DIRECT_ASSET_REV_CAT_TEXT"/>
+      <viewAttribute id="WBS_ENABLED_ASSET1"/>
+      <viewAttribute id="WBS_ENABLED_ASSET1_TEXT"/>
+      <viewAttribute id="WBS_ENABLED_ASSET1_TYPE"/>
+      <viewAttribute id="WBS_ENABLED_ASSET1_TYPE_TEXT"/>
+      <viewAttribute id="WBS_ENABLED_ASSET2"/>
+      <viewAttribute id="WBS_ENABLED_ASSET2_TEXT"/>
+      <viewAttribute id="WBS_ENABLED_ASSET2_TYPE"/>
+      <viewAttribute id="WBS_ENABLED_ASSET2_TYPE_TEXT"/>
+      <viewAttribute id="WBS_ENABLED_ASSET3"/>
+      <viewAttribute id="WBS_ENABLED_ASSET3_TEXT"/>
+      <viewAttribute id="WBS_ENABLED_ASSET3_TYPE"/>
+      <viewAttribute id="WBS_ENABLED_ASSET3_TYPE_TEXT"/>
+      <viewAttribute id="WBS_COST_CAT"/>
+      <viewAttribute id="WBS_FINANCE_PLAN_ID"/>
+      <viewAttribute id="WBS_BUDGET_GRP_REVENUE_CAP"/>
+      <viewAttribute id="WBS_BUDGET_GRP_EXP_BUDGET"/>
+      <viewAttribute id="WBS_BILL_CONSOLIDATION_FLG"/>
+      <viewAttribute id="WBS_INV_LANG"/>
+      <viewAttribute id="WBS_ALL_VENDOR_COMP_1"/>
+      <viewAttribute id="WBS_ALL_VENDOR_COMP_1_TEXT"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PROD_1"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PROD_1_TEXT"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PERC_1"/>
+      <viewAttribute id="WBS_ALL_VENDOR_COMP_2"/>
+      <viewAttribute id="WBS_ALL_VENDOR_COMP_2_TEXT"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PROD_2"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PROD_2_TEXT"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PERC_2"/>
+      <viewAttribute id="WBS_ALL_VENDOR_COMP_3"/>
+      <viewAttribute id="WBS_ALL_VENDOR_COMP_3_TEXT"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PROD_3"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PROD_3_TEXT"/>
+      <viewAttribute id="WBS_ALL_VENDOR_PERC_3"/>
+      <viewAttribute id="WBS_HASHEDIN_CLIENT"/>
+      <viewAttribute id="WBS_HASHEDIN_FLG"/>
+      <viewAttribute id="WBS_RA"/>
+      <viewAttribute id="WBS_RA_TEXT"/>
+      <viewAttribute id="WBS_LEVEL2_BILL_SCHED_FLG"/>
+      <viewAttribute id="WBS_AUTO_SWEEP"/>
+      <viewAttribute id="WBS_CLEAR_UNBILLED_BAL"/>
+      <viewAttribute id="WBS_SERV_DEP"/>
+      <viewAttribute id="LOADING_TS"/>
+      <viewAttribute id="LOADING_USER"/>
+      <viewAttribute id="WBS_FUND_CONTROLLER"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="WBS"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="Projection_1">
+  <attributes>
+    <attribute id="WBS" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS"/>
+    </attribute>
+    <attribute id="WBS_TEXT" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_TEXT"/>
+    </attribute>
+    <attribute id="WBS_LEVEL" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_LEVEL"/>
+    </attribute>
+    <attribute id="WBS_LEVEL1" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_LEVEL1"/>
+    </attribute>
+    <attribute id="WBS_LEVEL2" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_LEVEL2"/>
+    </attribute>
+    <attribute id="WBS_LEVEL3" order="6" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL3"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_LEVEL3"/>
+    </attribute>
+    <attribute id="WBS_LEVEL4" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL4"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_LEVEL4"/>
+    </attribute>
+    <attribute id="WBS_LEGACY" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEGACY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_LEGACY"/>
+    </attribute>
+    <attribute id="WBS_A_I_O" order="9" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_A_I_O"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_A_I_O"/>
+    </attribute>
+    <attribute id="WBS_A_I_O_TEXT" order="10" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_A_I_O_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_A_I_O_TEXT"/>
+    </attribute>
+    <attribute id="WBS_MASTER_ENGMT" order="11" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_MASTER_ENGMT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_MASTER_ENGMT"/>
+    </attribute>
+    <attribute id="WBS_MASTER_ENGMT_TEXT" order="12" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_MASTER_ENGMT_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_MASTER_ENGMT_TEXT"/>
+    </attribute>
+    <attribute id="WBS_CONTRACT_TYPE" order="13" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CONTRACT_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CONTRACT_TYPE"/>
+    </attribute>
+    <attribute id="WBS_CONTRACT_TYPE_TEXT" order="14" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CONTRACT_TYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CONTRACT_TYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_BILL_TO_CLIENT" order="15" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_BILL_TO_CLIENT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_BILL_TO_CLIENT"/>
+    </attribute>
+    <attribute id="WBS_END_CLIENT" order="16" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_END_CLIENT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_END_CLIENT"/>
+    </attribute>
+    <attribute id="DPS_CLIENT" order="17" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DPS_CLIENT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="DPS_CLIENT"/>
+    </attribute>
+    <attribute id="DPS_CLIENT_TEXT" order="18" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DPS_CLIENT_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="DPS_CLIENT_TEXT"/>
+    </attribute>
+    <attribute id="PARENT_CLIENT" order="19" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PARENT_CLIENT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PARENT_CLIENT"/>
+    </attribute>
+    <attribute id="PARENT_CLIENT_TEXT" order="20" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PARENT_CLIENT_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PARENT_CLIENT_TEXT"/>
+    </attribute>
+    <attribute id="WBS_BUDGET_GROUP" order="21" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_BUDGET_GROUP"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_BUDGET_GROUP"/>
+    </attribute>
+    <attribute id="WBS_BUS_IMPERATIVE_CODE" order="22" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_BUS_IMPERATIVE_CODE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_BUS_IMPERATIVE_CODE"/>
+    </attribute>
+    <attribute id="WBS_BUS_IMPERATIVE_CODE_TEXT" order="23" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_BUS_IMPERATIVE_CODE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_BUS_IMPERATIVE_CODE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_BIC_IP_FLG" order="24" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_BIC_IP_FLG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_BIC_IP_FLG"/>
+    </attribute>
+    <attribute id="WBS_CITY" order="25" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CITY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CITY"/>
+    </attribute>
+    <attribute id="WBS_CLIENT_NONCLIENT_IND" order="26" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CLIENT_NONCLIENT_IND"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CLIENT_NONCLIENT_IND"/>
+    </attribute>
+    <attribute id="WBS_CLIENT_NONCLIENT_IND_TEXT" order="27" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CLIENT_NONCLIENT_IND_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CLIENT_NONCLIENT_IND_TEXT"/>
+    </attribute>
+    <attribute id="WBS_CREATED_ON" order="28" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CREATED_ON"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CREATED_ON"/>
+    </attribute>
+    <attribute id="WBS_CREATED_BY" order="29" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CREATED_BY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CREATED_BY"/>
+    </attribute>
+    <attribute id="WBS_CHANGED_ON" order="30" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CHANGED_ON"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CHANGED_ON"/>
+    </attribute>
+    <attribute id="WBS_CLOSED_DATE" order="31" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CLOSED_DATE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CLOSED_DATE"/>
+    </attribute>
+    <attribute id="WBS_ESTIMATED_START_DATE" order="32" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ESTIMATED_START_DATE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ESTIMATED_START_DATE"/>
+    </attribute>
+    <attribute id="WBS_ESTIMATED_END_DATE" order="33" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ESTIMATED_END_DATE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ESTIMATED_END_DATE"/>
+    </attribute>
+    <attribute id="MEMBER_FIRM" order="34" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MEMBER_FIRM"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MEMBER_FIRM"/>
+    </attribute>
+    <attribute id="WBS_COMPANY_CODE" order="35" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_COMPANY_CODE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_COMPANY_CODE"/>
+    </attribute>
+    <attribute id="WBS_COMPANY_CODE_TEXT" order="36" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_COMPANY_CODE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_COMPANY_CODE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_CONTINGENCY_FEE_FLAG" order="37" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CONTINGENCY_FEE_FLAG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CONTINGENCY_FEE_FLAG"/>
+    </attribute>
+    <attribute id="WBS_LEVEL2_CONTINGENCY_FEE_FLAG" order="38" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL2_CONTINGENCY_FEE_FLAG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_LEVEL2_CONTINGENCY_FEE_FLAG"/>
+    </attribute>
+    <attribute id="WBS_CONTROLLING_AREA" order="39" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CONTROLLING_AREA"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CONTROLLING_AREA"/>
+    </attribute>
+    <attribute id="WBS_PROFIT_CENTER" order="40" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PROFIT_CENTER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PROFIT_CENTER"/>
+    </attribute>
+    <attribute id="WBS_PROFIT_CENTER_SHORT_TEXT" order="41" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PROFIT_CENTER_SHORT_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PROFIT_CENTER_SHORT_TEXT"/>
+    </attribute>
+    <attribute id="WBS_PROFIT_CENTER_MED_TEXT" order="42" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PROFIT_CENTER_MED_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PROFIT_CENTER_MED_TEXT"/>
+    </attribute>
+    <attribute id="WBS_COST_CENTER" order="43" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_COST_CENTER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_COST_CENTER"/>
+    </attribute>
+    <attribute id="WBS_COST_CENTER_SHORT_TEXT" order="44" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_COST_CENTER_SHORT_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_COST_CENTER_SHORT_TEXT"/>
+    </attribute>
+    <attribute id="WBS_COST_CENTER_MED_TEXT" order="45" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_COST_CENTER_MED_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_COST_CENTER_MED_TEXT"/>
+    </attribute>
+    <attribute id="WBS_CURRENT_DISCOUNT" order="46" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CURRENT_DISCOUNT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CURRENT_DISCOUNT"/>
+    </attribute>
+    <attribute id="WBS_DTT_PARTICIPATION" order="47" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_DTT_PARTICIPATION"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_DTT_PARTICIPATION"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_ENGMT_IND" order="48" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_ENGMT_IND"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_ENGMT_IND"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_SIC" order="49" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_SIC"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_SIC"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_SIC_TEXT" order="50" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_SIC_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_SIC_TEXT"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_INDUSTRY" order="51" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_INDUSTRY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_INDUSTRY"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_INDUSTRY_TEXT" order="52" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_INDUSTRY_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_INDUSTRY_TEXT"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_SECTOR" order="53" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_SECTOR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_SECTOR"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_SECTOR_TEXT" order="54" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_SECTOR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_SECTOR_TEXT"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_SUB_SECTOR" order="55" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_SUB_SECTOR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_SUB_SECTOR"/>
+    </attribute>
+    <attribute id="WBS_GLOBAL_SUB_SECTOR_TEXT" order="56" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_GLOBAL_SUB_SECTOR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_GLOBAL_SUB_SECTOR_TEXT"/>
+    </attribute>
+    <attribute id="WBS_IMO" order="57" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_IMO"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_IMO"/>
+    </attribute>
+    <attribute id="WBS_IMO_TEXT" order="58" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_IMO_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_IMO_TEXT"/>
+    </attribute>
+    <attribute id="WBS_INTERNAL_NUM" order="59" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INTERNAL_NUM"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INTERNAL_NUM"/>
+    </attribute>
+    <attribute id="WBS_INV_HEADER" order="60" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INV_HEADER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INV_HEADER"/>
+    </attribute>
+    <attribute id="WBS_INV_HEADER_TEXT" order="61" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INV_HEADER_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INV_HEADER_TEXT"/>
+    </attribute>
+    <attribute id="WBS_INV_TYPE" order="62" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INV_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INV_TYPE"/>
+    </attribute>
+    <attribute id="WBS_INV_TYPE_TEXT" order="63" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INV_TYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INV_TYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_INV_TO_DTT" order="64" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INV_TO_DTT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INV_TO_DTT"/>
+    </attribute>
+    <attribute id="WBS_INV_MEDIUM" order="65" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INV_MEDIUM"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INV_MEDIUM"/>
+    </attribute>
+    <attribute id="WBS_TRANSM_METHOD" order="66" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_TRANSM_METHOD"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_TRANSM_METHOD"/>
+    </attribute>
+    <attribute id="WBS_OBJECT_NBR" order="67" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_OBJECT_NBR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_OBJECT_NBR"/>
+    </attribute>
+    <attribute id="WBS_OPPORTUNITY_NBR" order="68" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_OPPORTUNITY_NBR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_OPPORTUNITY_NBR"/>
+    </attribute>
+    <attribute id="WBS_PRI_BILLTO_CONTACT" order="69" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PRI_BILLTO_CONTACT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PRI_BILLTO_CONTACT"/>
+    </attribute>
+    <attribute id="WBS_PRI_BILLTO_CONTACT_TEXT" order="70" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PRI_BILLTO_CONTACT_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PRI_BILLTO_CONTACT_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_DEF" order="71" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_DEF"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_DEF"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_DEF_TEXT" order="72" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_DEF_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_DEF_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_TYPE_GROUP" order="73" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_TYPE_GROUP"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_TYPE_GROUP"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_TYPE_GROUP_TEXT" order="74" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_TYPE_GROUP_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_TYPE_GROUP_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_TYPE" order="75" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_TYPE"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_TYPE_TEXT" order="76" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_TYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_TYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_SUBTYPE" order="77" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_SUBTYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_SUBTYPE"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_SUBTYPE_TEXT" order="78" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_SUBTYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_SUBTYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENGMT_CLIENT_PRD_TYPE" order="79" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENGMT_CLIENT_PRD_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENGMT_CLIENT_PRD_TYPE"/>
+    </attribute>
+    <attribute id="WBS_EVENT_FEE_INDICATOR" order="80" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_EVENT_FEE_INDICATOR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_EVENT_FEE_INDICATOR"/>
+    </attribute>
+    <attribute id="WBS_PAYMENT_TERMS" order="81" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PAYMENT_TERMS"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PAYMENT_TERMS"/>
+    </attribute>
+    <attribute id="WBS_PAYMENT_TERMS_TEXT" order="82" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PAYMENT_TERMS_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PAYMENT_TERMS_TEXT"/>
+    </attribute>
+    <attribute id="WBS_RATE_TYPE" order="83" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_RATE_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_RATE_TYPE"/>
+    </attribute>
+    <attribute id="WBS_RATE_TYPE_TEXT" order="84" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_RATE_TYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_RATE_TYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_INDIA_RATE_TYPE" order="85" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INDIA_RATE_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INDIA_RATE_TYPE"/>
+    </attribute>
+    <attribute id="WBS_INDIA_RATE_TYPE_TEXT" order="86" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INDIA_RATE_TYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INDIA_RATE_TYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_RECURRING_FLAG" order="87" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_RECURRING_FLAG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_RECURRING_FLAG"/>
+    </attribute>
+    <attribute id="WBS_SECTOR_MO_CODE" order="88" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SECTOR_MO_CODE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SECTOR_MO_CODE"/>
+    </attribute>
+    <attribute id="WBS_SECTOR_MO_TEXT" order="89" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SECTOR_MO_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SECTOR_MO_TEXT"/>
+    </attribute>
+    <attribute id="WBS_SERVICES_AT_CLIENT" order="90" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SERVICES_AT_CLIENT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SERVICES_AT_CLIENT"/>
+    </attribute>
+    <attribute id="WBS_SIC" order="91" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SIC"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SIC"/>
+    </attribute>
+    <attribute id="WBS_SIC_TEXT" order="92" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SIC_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SIC_TEXT"/>
+    </attribute>
+    <attribute id="WBS_INDUSTRY" order="93" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INDUSTRY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INDUSTRY"/>
+    </attribute>
+    <attribute id="WBS_INDUSTRY_TEXT" order="94" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INDUSTRY_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INDUSTRY_TEXT"/>
+    </attribute>
+    <attribute id="WBS_SECTOR" order="95" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SECTOR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SECTOR"/>
+    </attribute>
+    <attribute id="WBS_SECTOR_TEXT" order="96" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SECTOR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SECTOR_TEXT"/>
+    </attribute>
+    <attribute id="WBS_SUB_SECTOR" order="97" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SUB_SECTOR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SUB_SECTOR"/>
+    </attribute>
+    <attribute id="WBS_SUB_SECTOR_TEXT" order="98" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SUB_SECTOR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SUB_SECTOR_TEXT"/>
+    </attribute>
+    <attribute id="WBS_WORK_OUTSIDE_US" order="99" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_WORK_OUTSIDE_US"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_WORK_OUTSIDE_US"/>
+    </attribute>
+    <attribute id="WBS_STATUS_ID" order="100" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_STATUS_ID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_STATUS_ID"/>
+    </attribute>
+    <attribute id="WBS_STATUS_SHORT_TEXT" order="101" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_STATUS_SHORT_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_STATUS_SHORT_TEXT"/>
+    </attribute>
+    <attribute id="WBS_STATUS_MED_TEXT" order="102" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_STATUS_MED_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_STATUS_MED_TEXT"/>
+    </attribute>
+    <attribute id="WBS_STATE" order="103" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_STATE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_STATE"/>
+    </attribute>
+    <attribute id="WBS_SYS_STATUS" order="104" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SYS_STATUS"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SYS_STATUS"/>
+    </attribute>
+    <attribute id="WBS_SYS_STATUS_TEXT" order="105" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SYS_STATUS_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SYS_STATUS_TEXT"/>
+    </attribute>
+    <attribute id="WBS_USER_STATUS" order="106" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_USER_STATUS"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_USER_STATUS"/>
+    </attribute>
+    <attribute id="WBS_USER_STATUS_TEXT" order="107" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_USER_STATUS_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_USER_STATUS_TEXT"/>
+    </attribute>
+    <attribute id="WBS_PREFIX" order="108" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PREFIX"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PREFIX"/>
+    </attribute>
+    <attribute id="WBS_VBB_TYPE" order="109" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_VBB_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_VBB_TYPE"/>
+    </attribute>
+    <attribute id="WBS_TAX_PRESENCE_IND" order="110" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_TAX_PRESENCE_IND"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_TAX_PRESENCE_IND"/>
+    </attribute>
+    <attribute id="WBS_NONBILL_IND" order="111" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_NONBILL_IND"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_NONBILL_IND"/>
+    </attribute>
+    <attribute id="MO" order="112" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO"/>
+    </attribute>
+    <attribute id="MO_TEXT" order="113" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_TEXT"/>
+    </attribute>
+    <attribute id="MO_GROUP" order="114" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_GROUP"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_GROUP"/>
+    </attribute>
+    <attribute id="MO_GROUP_TEXT" order="115" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_GROUP_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_GROUP_TEXT"/>
+    </attribute>
+    <attribute id="MO_SUB_SOLUTION" order="116" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_SUB_SOLUTION"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_SUB_SOLUTION"/>
+    </attribute>
+    <attribute id="MO_SUB_SOLUTION_TEXT" order="117" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_SUB_SOLUTION_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_SUB_SOLUTION_TEXT"/>
+    </attribute>
+    <attribute id="MO_SOLUTION" order="118" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_SOLUTION"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_SOLUTION"/>
+    </attribute>
+    <attribute id="MO_SOLUTION_TEXT" order="119" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_SOLUTION_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_SOLUTION_TEXT"/>
+    </attribute>
+    <attribute id="MO_SUB_CATEGORY" order="120" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_SUB_CATEGORY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_SUB_CATEGORY"/>
+    </attribute>
+    <attribute id="MO_SUB_CATEGORY_TEXT" order="121" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_SUB_CATEGORY_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_SUB_CATEGORY_TEXT"/>
+    </attribute>
+    <attribute id="MO_CATEGORY" order="122" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_CATEGORY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_CATEGORY"/>
+    </attribute>
+    <attribute id="MO_CATEGORY_TEXT" order="123" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MO_CATEGORY_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MO_CATEGORY_TEXT"/>
+    </attribute>
+    <attribute id="ADV_MO_FULL_PATH_OVRD" order="124" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADV_MO_FULL_PATH_OVRD"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ADV_MO_FULL_PATH_OVRD"/>
+    </attribute>
+    <attribute id="PROD_HIER_OVRD" order="125" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PROD_HIER_OVRD"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PROD_HIER_OVRD"/>
+    </attribute>
+    <attribute id="ADV_MO_TEXT" order="126" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADV_MO_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ADV_MO_TEXT"/>
+    </attribute>
+    <attribute id="ADV_MO_SOLUTION" order="127" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ADV_MO_SOLUTION"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ADV_MO_SOLUTION"/>
+    </attribute>
+    <attribute id="ENGMT_PRTNR" order="128" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENGMT_PRTNR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ENGMT_PRTNR"/>
+    </attribute>
+    <attribute id="ENGMT_PRTNR_TEXT" order="129" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENGMT_PRTNR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ENGMT_PRTNR_TEXT"/>
+    </attribute>
+    <attribute id="ENGMT_MGR" order="130" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENGMT_MGR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ENGMT_MGR"/>
+    </attribute>
+    <attribute id="ENGMT_MGR_TEXT" order="131" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENGMT_MGR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ENGMT_MGR_TEXT"/>
+    </attribute>
+    <attribute id="ENGMT_CTRL" order="132" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENGMT_CTRL"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ENGMT_CTRL"/>
+    </attribute>
+    <attribute id="ENGMT_CTRL_TEXT" order="133" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENGMT_CTRL_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ENGMT_CTRL_TEXT"/>
+    </attribute>
+    <attribute id="BILL_PRTNR" order="134" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BILL_PRTNR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="BILL_PRTNR"/>
+    </attribute>
+    <attribute id="BILL_PRTNR_TEXT" order="135" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BILL_PRTNR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="BILL_PRTNR_TEXT"/>
+    </attribute>
+    <attribute id="BILL_MGR" order="136" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BILL_MGR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="BILL_MGR"/>
+    </attribute>
+    <attribute id="BILL_MGR_TEXT" order="137" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BILL_MGR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="BILL_MGR_TEXT"/>
+    </attribute>
+    <attribute id="PRTCP_ENGMT_PRTNR" order="138" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRTCP_ENGMT_PRTNR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PRTCP_ENGMT_PRTNR"/>
+    </attribute>
+    <attribute id="PRTCP_ENGMT_PRTNR_TEXT" order="139" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRTCP_ENGMT_PRTNR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PRTCP_ENGMT_PRTNR_TEXT"/>
+    </attribute>
+    <attribute id="PRTCP_ENGMT_MGR" order="140" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRTCP_ENGMT_MGR"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PRTCP_ENGMT_MGR"/>
+    </attribute>
+    <attribute id="PRTCP_ENGMT_MGR_TEXT" order="141" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PRTCP_ENGMT_MGR_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PRTCP_ENGMT_MGR_TEXT"/>
+    </attribute>
+    <attribute id="SR_STAFF" order="142" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SR_STAFF"/>
+      <keyMapping columnObjectName="Projection_1" columnName="SR_STAFF"/>
+    </attribute>
+    <attribute id="SR_STAFF_TEXT" order="143" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="SR_STAFF_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="SR_STAFF_TEXT"/>
+    </attribute>
+    <attribute id="FIN_ANALYST" order="144" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FIN_ANALYST"/>
+      <keyMapping columnObjectName="Projection_1" columnName="FIN_ANALYST"/>
+    </attribute>
+    <attribute id="FIN_ANALYST_TEXT" order="145" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="FIN_ANALYST_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="FIN_ANALYST_TEXT"/>
+    </attribute>
+    <attribute id="CONTRACT_NUMBER" order="146" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CONTRACT_NUMBER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CONTRACT_NUMBER"/>
+    </attribute>
+    <attribute id="CONTRACT_LINE_ITEM" order="147" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CONTRACT_LINE_ITEM"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CONTRACT_LINE_ITEM"/>
+    </attribute>
+    <attribute id="CONTRACT_PROD_HIERARCHY" order="148" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CONTRACT_PROD_HIERARCHY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CONTRACT_PROD_HIERARCHY"/>
+    </attribute>
+    <attribute id="CONTRACT_MATERIAL" order="149" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="CONTRACT_MATERIAL"/>
+      <keyMapping columnObjectName="Projection_1" columnName="CONTRACT_MATERIAL"/>
+    </attribute>
+    <attribute id="MATERIAL_PROD_HIERARCHY" order="150" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="MATERIAL_PROD_HIERARCHY"/>
+      <keyMapping columnObjectName="Projection_1" columnName="MATERIAL_PROD_HIERARCHY"/>
+    </attribute>
+    <attribute id="PROD_HIER" order="151" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="PROD_HIER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="PROD_HIER"/>
+    </attribute>
+    <attribute id="ENGMT_SERVICE_UPLIFT" order="152" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="ENGMT_SERVICE_UPLIFT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="ENGMT_SERVICE_UPLIFT"/>
+    </attribute>
+    <attribute id="WBS_SALES_OFFICE" order="153" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SALES_OFFICE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SALES_OFFICE"/>
+    </attribute>
+    <attribute id="WBS_INV_LAYOUT" order="154" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INV_LAYOUT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INV_LAYOUT"/>
+    </attribute>
+    <attribute id="WBS_PAYER" order="155" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_PAYER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_PAYER"/>
+    </attribute>
+    <attribute id="WBS_SHIP_TO_LOCATION" order="156" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SHIP_TO_LOCATION"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SHIP_TO_LOCATION"/>
+    </attribute>
+    <attribute id="WBS_CLIENT_REF_PO_NUMBER" order="157" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CLIENT_REF_PO_NUMBER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CLIENT_REF_PO_NUMBER"/>
+    </attribute>
+    <attribute id="WBS_DIRECT_ASSET" order="158" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_DIRECT_ASSET"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_DIRECT_ASSET"/>
+    </attribute>
+    <attribute id="WBS_DIRECT_ASSET_TEXT" order="159" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_DIRECT_ASSET_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_DIRECT_ASSET_TEXT"/>
+    </attribute>
+    <attribute id="WBS_DIRECT_ASSET_REV_CAT" order="160" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_DIRECT_ASSET_REV_CAT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_DIRECT_ASSET_REV_CAT"/>
+    </attribute>
+    <attribute id="WBS_DIRECT_ASSET_REV_CAT_TEXT" order="161" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_DIRECT_ASSET_REV_CAT_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_DIRECT_ASSET_REV_CAT_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET1" order="162" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET1"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET1_TEXT" order="163" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET1_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET1_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET1_TYPE" order="164" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET1_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET1_TYPE"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET1_TYPE_TEXT" order="165" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET1_TYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET1_TYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET2" order="166" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET2"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET2_TEXT" order="167" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET2_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET2_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET2_TYPE" order="168" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET2_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET2_TYPE"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET2_TYPE_TEXT" order="169" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET2_TYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET2_TYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET3" order="170" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET3"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET3"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET3_TEXT" order="171" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET3_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET3_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET3_TYPE" order="172" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET3_TYPE"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET3_TYPE"/>
+    </attribute>
+    <attribute id="WBS_ENABLED_ASSET3_TYPE_TEXT" order="173" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ENABLED_ASSET3_TYPE_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ENABLED_ASSET3_TYPE_TEXT"/>
+    </attribute>
+    <attribute id="WBS_COST_CAT" order="174" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_COST_CAT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_COST_CAT"/>
+    </attribute>
+    <attribute id="WBS_FINANCE_PLAN_ID" order="175" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_FINANCE_PLAN_ID"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_FINANCE_PLAN_ID"/>
+    </attribute>
+    <attribute id="WBS_BUDGET_GRP_REVENUE_CAP" order="176" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_BUDGET_GRP_REVENUE_CAP"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_BUDGET_GRP_REVENUE_CAP"/>
+    </attribute>
+    <attribute id="WBS_BUDGET_GRP_EXP_BUDGET" order="177" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_BUDGET_GRP_EXP_BUDGET"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_BUDGET_GRP_EXP_BUDGET"/>
+    </attribute>
+    <attribute id="WBS_BILL_CONSOLIDATION_FLG" order="178" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_BILL_CONSOLIDATION_FLG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_BILL_CONSOLIDATION_FLG"/>
+    </attribute>
+    <attribute id="WBS_INV_LANG" order="179" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_INV_LANG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_INV_LANG"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_COMP_1" order="180" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_COMP_1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_COMP_1"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_COMP_1_TEXT" order="181" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_COMP_1_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_COMP_1_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PROD_1" order="182" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PROD_1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PROD_1"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PROD_1_TEXT" order="183" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PROD_1_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PROD_1_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PERC_1" order="184" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PERC_1"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PERC_1"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_COMP_2" order="185" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_COMP_2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_COMP_2"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_COMP_2_TEXT" order="186" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_COMP_2_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_COMP_2_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PROD_2" order="187" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PROD_2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PROD_2"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PROD_2_TEXT" order="188" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PROD_2_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PROD_2_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PERC_2" order="189" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PERC_2"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PERC_2"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_COMP_3" order="190" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_COMP_3"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_COMP_3"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_COMP_3_TEXT" order="191" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_COMP_3_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_COMP_3_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PROD_3" order="192" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PROD_3"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PROD_3"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PROD_3_TEXT" order="193" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PROD_3_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PROD_3_TEXT"/>
+    </attribute>
+    <attribute id="WBS_ALL_VENDOR_PERC_3" order="194" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_ALL_VENDOR_PERC_3"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_ALL_VENDOR_PERC_3"/>
+    </attribute>
+    <attribute id="WBS_HASHEDIN_CLIENT" order="195" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_HASHEDIN_CLIENT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_HASHEDIN_CLIENT"/>
+    </attribute>
+    <attribute id="WBS_HASHEDIN_FLG" order="196" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_HASHEDIN_FLG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_HASHEDIN_FLG"/>
+    </attribute>
+    <attribute id="WBS_RA" order="197" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_RA"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_RA"/>
+    </attribute>
+    <attribute id="WBS_RA_TEXT" order="198" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_RA_TEXT"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_RA_TEXT"/>
+    </attribute>
+    <attribute id="WBS_LEVEL2_BILL_SCHED_FLG" order="199" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_LEVEL2_BILL_SCHED_FLG"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_LEVEL2_BILL_SCHED_FLG"/>
+    </attribute>
+    <attribute id="WBS_AUTO_SWEEP" order="200" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_AUTO_SWEEP"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_AUTO_SWEEP"/>
+    </attribute>
+    <attribute id="WBS_CLEAR_UNBILLED_BAL" order="201" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_CLEAR_UNBILLED_BAL"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_CLEAR_UNBILLED_BAL"/>
+    </attribute>
+    <attribute id="WBS_SERV_DEP" order="202" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_SERV_DEP"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_SERV_DEP"/>
+    </attribute>
+    <attribute id="LOADING_TS" order="203" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOADING_TS"/>
+      <keyMapping columnObjectName="Projection_1" columnName="LOADING_TS"/>
+    </attribute>
+    <attribute id="LOADING_USER" order="204" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="LOADING_USER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="LOADING_USER"/>
+    </attribute>
+    <attribute id="WBS_FUND_CONTROLLER" order="205" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="WBS_FUND_CONTROLLER"/>
+      <keyMapping columnObjectName="Projection_1" columnName="WBS_FUND_CONTROLLER"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures/>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="92" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92" y="217"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

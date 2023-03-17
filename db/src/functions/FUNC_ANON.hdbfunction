@@ -1,0 +1,7 @@
+FUNCTION "FUNC_ANON"(value nvarchar(255), level integer)
+RETURNS outValue nvarchar(255) AS
+BEGIN
+  DECLARE charsToShow integer default 0;
+    charsToShow := length(value) - level;
+    outValue := 'XXX:'||lpad(substring(value, 1+level), charsToShow+level,'*');
+END;

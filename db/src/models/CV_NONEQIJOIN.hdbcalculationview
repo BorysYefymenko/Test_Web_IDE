@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="CV_NONEQIJOIN" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="false">
+<descriptions defaultDescription="CV_NONEQIJOIN"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="PO.INVOICE_ITEM">
+    <resourceUri>PO.INVOICE_ITEM</resourceUri>
+  </DataSource>
+  <DataSource id="PO.APPROVAL_STATUS">
+    <resourceUri>PO.APPROVAL_STATUS</resourceUri>
+  </DataSource>
+</dataSources>
+<calculationViews>
+  <calculationView xsi:type="Calculation:NonEquiJoinView" id="NonEquiJoin_1" cardinality="CN_N" joinType="inner">
+    <viewAttributes>
+      <viewAttribute id="ID" aggregationType="sum"/>
+      <viewAttribute id="PRODUCT_ID" aggregationType="sum"/>
+      <viewAttribute id="DELIVERY_DATE"/>
+      <viewAttribute id="APPROVAL_STATUS_ID"/>
+      <viewAttribute id="AMOUNT" aggregationType="sum"/>
+      <viewAttribute id="QUANTITY" aggregationType="sum"/>
+      <viewAttribute id="APPROVAL_STATUS_ID_RIGHT"/>
+      <viewAttribute id="TEXT"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="Projection_1">
+      <mapping xsi:type="Calculation:AttributeMapping" target="ID" source="ID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="PRODUCT_ID" source="PRODUCT_ID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="DELIVERY_DATE" source="DELIVERY_DATE"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="APPROVAL_STATUS_ID" source="APPROVAL_STATUS_ID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="AMOUNT" source="AMOUNT"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="QUANTITY" source="QUANTITY"/>
+    </input>
+    <input node="Projection_2">
+      <mapping xsi:type="Calculation:AttributeMapping" target="APPROVAL_STATUS_ID_RIGHT" source="ID"/>
+      <mapping xsi:type="Calculation:AttributeMapping" target="TEXT" source="TEXT"/>
+    </input>
+    <joinAttribute leftColumn="APPROVAL_STATUS_ID" rightColumn="ID" operator="GT"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+    <viewAttributes>
+      <viewAttribute id="ID"/>
+      <viewAttribute id="PRODUCT_ID"/>
+      <viewAttribute id="DELIVERY_DATE"/>
+      <viewAttribute id="APPROVAL_STATUS_ID"/>
+      <viewAttribute id="AMOUNT"/>
+      <viewAttribute id="QUANTITY"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="PO.INVOICE_ITEM"/>
+  </calculationView>
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_2">
+    <viewAttributes>
+      <viewAttribute id="ID"/>
+      <viewAttribute id="TEXT"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="PO.APPROVAL_STATUS"/>
+  </calculationView>
+</calculationViews>
+<logicalModel id="NonEquiJoin_1">
+  <attributes>
+    <attribute id="ID" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Invoice Item ID"/>
+      <keyMapping columnObjectName="NonEquiJoin_1" columnName="ID"/>
+    </attribute>
+    <attribute id="PRODUCT_ID" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Invoice Item Product ID"/>
+      <keyMapping columnObjectName="NonEquiJoin_1" columnName="PRODUCT_ID"/>
+    </attribute>
+    <attribute id="DELIVERY_DATE" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Invoice Item Delivery Date"/>
+      <keyMapping columnObjectName="NonEquiJoin_1" columnName="DELIVERY_DATE"/>
+    </attribute>
+    <attribute id="APPROVAL_STATUS_ID" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Invoice Item Approcal Status ID"/>
+      <keyMapping columnObjectName="NonEquiJoin_1" columnName="APPROVAL_STATUS_ID"/>
+    </attribute>
+    <attribute id="APPROVAL_STATUS_ID_RIGHT" order="7" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Approval Status ID"/>
+      <keyMapping columnObjectName="NonEquiJoin_1" columnName="APPROVAL_STATUS_ID_RIGHT"/>
+    </attribute>
+    <attribute id="TEXT" order="8" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="Approval Status Text"/>
+      <keyMapping columnObjectName="NonEquiJoin_1" columnName="TEXT"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="AMOUNT" order="5" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Invoice Item Amount"/>
+      <measureMapping columnObjectName="NonEquiJoin_1" columnName="AMOUNT"/>
+    </measure>
+    <measure id="QUANTITY" order="6" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="Invoice Item Quantity"/>
+      <measureMapping columnObjectName="NonEquiJoin_1" columnName="QUANTITY"/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures/>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="221.11302679000914" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+  
+    <shape expanded="true" modelObjectName="NonEquiJoin_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="221.11302679000914" y="217"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape modelObjectName="Projection_1" modelObjectNameSpace="NonEquiJoin_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="20" y="30"/>
+      <rectangleSize width="136.0234375"/>
+    </shape>
+    <shape modelObjectName="Projection_2" modelObjectNameSpace="NonEquiJoin_1" modelObjectType="JoinNodeInput">
+      <upperLeftCorner x="320" y="30"/>
+      <rectangleSize width="136.0234375"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Projection_1" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="302.00000000000006" y="356.9999988079071"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+    <shape expanded="true" modelObjectName="Projection_2" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="92.00000000000003" y="356.9999988079071"/>
+      <rectangleSize height="30" width="160"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>

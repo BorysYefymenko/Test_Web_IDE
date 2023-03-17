@@ -9,13 +9,19 @@
   </DataSource>
 </dataSources>
 <calculationViews>
-  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1">
+  <calculationView xsi:type="Calculation:ProjectionView" id="Projection_1" filterExpressionLanguage="SQL">
     <viewAttributes>
       <viewAttribute id="ID"/>
       <viewAttribute id="TEXT"/>
     </viewAttributes>
-    <calculatedViewAttributes/>
+    <calculatedViewAttributes>
+      <calculatedViewAttribute id="CALC_ATTR" datatype="NVARCHAR" length="13" expressionLanguage="SQL">
+        <formula>&quot;TEXT&quot;||'123'</formula>
+      </calculatedViewAttribute>
+    </calculatedViewAttributes>
     <input node="PO.APPROVAL_STATUS"/>
+  
+    <filter>&quot;CALC_ATTR&quot;&gt; '456'</filter>
   </calculationView>
 </calculationViews>
 <logicalModel id="Projection_1">
